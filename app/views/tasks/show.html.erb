@@ -1,0 +1,9 @@
+<p><%= link_to 'Go back to the tasks list', tasks_path %></p>
+
+<h1><%= @task.title %></h1>
+<%= @task.completed? ? '[X] Done!' : '[ ] Not done yet' %>
+<p><%= @task.details %></p>
+
+<p><%= link_to '✍️ Edit this task', task_edit_path %></p>
+<p><%= link_to '🗑 Delete this task', task_delete_path %></p>
+<br>
